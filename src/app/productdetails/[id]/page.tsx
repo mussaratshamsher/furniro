@@ -16,7 +16,7 @@ interface Product {
 }  
  
 const fetchProduct = async (id: string): Promise<Product | null> => {  
-
+   console.log("Fetching product with ID:", id); 
     const query = `*[_type == "product" && id == $id][0]{  
         title, name, id, image, description, price ,detail , yellowstars, graystars, 
         
