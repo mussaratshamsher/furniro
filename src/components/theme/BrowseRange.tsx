@@ -10,8 +10,8 @@ export default function BrowseRange() {
     const settings = {
         dots: true,
     infinite: true,
-    slidesToShow: 5,
-    slidesToScroll: 5,
+    slidesToShow: 4,
+    slidesToScroll: 1,
     autoplay: true,
     autoplaySpeed: 2000,
     pauseOnHover: true,
@@ -63,7 +63,8 @@ export default function BrowseRange() {
       <h2 className='text-[#b88f14] text-center md:text-lg lg:text-xl mt-5'>
       Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae quos dolore doloribus. </h2>
 
-<div className='p-5 md:p-0 lg:px-4 lg:py-10 md:mt-48 lg:mt-0 lg:ml-10'>
+<div className='p-5 md:p-0 lg:px-4 lg:py-10 md:mt-48 lg:mt-0 lg:ml-10 xl:ml-1'>
+
 
 <Slider {...settings}>
         <div className='1'>
@@ -91,7 +92,7 @@ export default function BrowseRange() {
           width={500} height={500} className='max-w-80 h-80 rounded-md'/>
         <h1 className='font-bold text-xl '>Room</h1>
         </div>
-        </Slider>
+</Slider>
 
 
 </div>
