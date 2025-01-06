@@ -77,8 +77,9 @@ export default function BrowseRange() {
 
 <Slider {...settings}>
         <div className='1'>
-          <Image src='/images/slider1.png' alt='slider1'
-          width={2000} height={2000} className='max-w-80 h-80 rounded-md md:p-2 lg:p-0'/>
+          <Image src='/images/slider1.png' alt='slider1' 
+          width={2000} height={2000} 
+          className='max-w-80 h-80 rounded-md md:p-2 lg:p-0'/>
         <h1 className='font-bold text-xl '>Living</h1>
         </div>
         <div className='2'>

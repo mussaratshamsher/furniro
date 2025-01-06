@@ -1,6 +1,4 @@
 
-
-
 import { client } from '@/sanity/lib/client';  
 import { urlFor } from '@/sanity/lib/image';  
 import Image from 'next/image';  
@@ -41,6 +39,7 @@ const ProductDetail = async ({ params }: { params: { id: string } }) => {
                 width={500}  
                 height={500}  
             />  
+            
             <h2 className='text-xl'>{product.name}</h2>  
             <p>{product.description}</p>  
             <h3 className='text-lg font-bold'>{product.price}</h3>  

@@ -16,11 +16,11 @@ export default async function Furniture() {
             <p className='text-center'>Share your steps with</p>
             <h1 className='text-center font-bold text-2xl lg:text-4xl'>#{furnitureData.title}</h1>
 
-        <div className='grid grid-cols-5 lg:px-10 gap-2 md:gap-3 lg:gap-5'>  
+        <div className='grid grid-cols-5 px-2 lg:px-10 gap-1 md:gap-3 lg:gap-5'>  
 
             {/* grid 1 */}  
             <div className='col-span-2 '>  
-                <div className='grid grid-cols-6 grid-rows-2 gap-3 lg:gap-5'>  
+                <div className='grid grid-cols-6 grid-rows-2 gap-1 lg:gap-5'>  
 
                     <Image src={urlFor(furnitureData.image1).url()}   
                         alt={furnitureData.title} width={2000} height={2000} />  
@@ -41,7 +41,7 @@ export default async function Furniture() {
 
             {/* grid 3 */}  
             <div className='col-span-2'>  
-                <div className='grid grid-cols-8 gap-3 lg:gap-5'>  
+                <div className='grid grid-cols-8 gap-1 lg:gap-5'>  
                     <Image src={urlFor(furnitureData.image6).url()}   
                         alt={furnitureData.title} width={2000} height={2000} className='col-span-3 mt-10 lg:mt-40' />  
                     <Image src={urlFor(furnitureData.image7).url()}   
