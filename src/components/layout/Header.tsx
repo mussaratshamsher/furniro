@@ -8,7 +8,7 @@ import logo from '../../../public/images/logo.png'
 
 export default function Header() {
   return (
-    <div  className='max-w-[1440px]'>
+    <div  className='max-w-[1440px] container mx-auto'>
     <div className='w-full h-20 flex justify-between md:justify-around p-5  md:p-10'>
 
 <div className='flex md:-mt-3 gap-2 hover:animate-pulse'>

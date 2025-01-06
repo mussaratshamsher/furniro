@@ -29,7 +29,7 @@ export default async function Designs() {
       };
 
   return (
-    <div className='max-w-[1440px]'>
+    <div className='max-w-[1440px] container mx-auto'>
 <div className='bg-[#f4dec6] h-[900px] md:h-[1100px] lg:h-[620px] grid md:grid-cols-2 lg:grid-cols-3 p-2 lg:p-5 mb-2 md:mb-5 lg:mb-10'>
 
 <div className='grid1 p-2 lg:p-5 xl:p-2 mt-2 md:mt-32 lg:mt-0'>

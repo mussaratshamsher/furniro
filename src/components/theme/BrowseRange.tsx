@@ -53,13 +53,22 @@ export default function BrowseRange() {
               dots: true,
               arrows: false,
             }
+          },
+          {
+            breakpoint: 320,
+            settings: {
+              slidesToShow: 1,
+              slidesToScroll: 1,
+              dots: true,
+              arrows: false,
+            }
           }
         ]
       };
   return (
-    <div className='max-w-[1440px] mb-2 md:mb-5'>
+    <div className='max-w-[1440px] mb-2 md:mb-5 container mx-auto'>
 
-      <h1 className='text-center text-3xl font-extrabold mt-2 md:mt-5 lg:mt-10'>Browse By Category</h1>
+      <h1 className='text-center text-xl md:text-2xl lg:text-3xl font-extrabold mt-2 md:mt-5 lg:mt-10'>Browse By Category</h1>
       <h2 className='text-[#b88f14] text-center md:text-lg lg:text-xl mt-5'>
       Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae quos dolore doloribus. </h2>
 

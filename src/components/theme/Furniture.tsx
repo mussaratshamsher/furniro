@@ -12,7 +12,7 @@ export default async function Furniture() {
     const [furnitureData] = sanityData;  
 
     return (  
-        <div className='max-w-[1440px]'>
+        <div className='max-w-[1440px] container mx-auto'>
             <p className='text-center'>Share your steps with</p>
             <h1 className='text-center font-bold text-2xl lg:text-4xl'>#{furnitureData.title}</h1>
 
@@ -21,7 +21,7 @@ export default async function Furniture() {
             {/* grid 1 */}  
             <div className='col-span-2 '>  
                 <div className='grid grid-cols-6 grid-rows-2 gap-3 lg:gap-5'>  
-                    
+
                     <Image src={urlFor(furnitureData.image1).url()}   
                         alt={furnitureData.title} width={2000} height={2000} />  
                     <Image src={urlFor(furnitureData.image2).url()}   
@@ -45,7 +45,7 @@ export default async function Furniture() {
                     <Image src={urlFor(furnitureData.image6).url()}   
                         alt={furnitureData.title} width={2000} height={2000} className='col-span-3 mt-10 lg:mt-40' />  
                     <Image src={urlFor(furnitureData.image7).url()}   
-                        alt={furnitureData.title} width={1000} height={1000} className='col-span-5 w-80 h-20 lg:h-96' />  
+                        alt={furnitureData.title} width={1000} height={1000} className='col-span-5 w-80 h-20 md:h-40 lg:h-80 xl:h-96' />  
                     <Image src={urlFor(furnitureData.image8).url()}   
                         alt={furnitureData.title} width={2000} height={2000} className='col-span-2' />  
                     <Image src={urlFor(furnitureData.image9).url()}   

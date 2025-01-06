@@ -33,7 +33,7 @@ const ProductDetail = async ({ params }: { params: { id: string } }) => {
     }  
 
     return (  
-        <div className='product-detail'>  
+        <div className='product-detail max-w-[1440px] container mx-auto'>  
             <h1 className='text-3xl'>{product.title}</h1>  
             <Image  
                 src={urlFor(product.image).url()}  

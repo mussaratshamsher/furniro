@@ -2,11 +2,11 @@ import React from 'react'
 
 export default function Footer() {
   return (
-    <div>
+    <div className='max-w-[1440px] container mx-auto'>
         <hr className='mx-10'/>
-<div className='grid grid-cols-1 md:grid-cols-6 md:p-5 lg:py-10 lg:px-28'>
+<div className='grid grid-cols-1 md:grid-cols-6 md:p-5 lg:py-10 lg:px-28 mx-5 sm:mx-2 md:mx-0'>
     
-    <div className='col-span-2'>
+    <div className='col-span-1 md:col-span-2'>
         <h1 className='font-bold text-xl lg:mb-5'>Furniro</h1>
 <p className='text-gray-400'>500 Univeristy Drive suits 200 <br />Coral Gables,</p>
 <p className='text-gray-400'>FL 33134 USA</p>
@@ -29,7 +29,7 @@ export default function Footer() {
      <h1>Privacy Policies</h1>
 </div>
 
-<div className='col-span-2'>
+<div className='md:col-span-2'>
     <h1 className='text-gray-400 lg:mb-5'>Newsletter</h1>
     <input type="text" placeholder='Enter Your Email Address' className='border-b border-black col-span-1'/>
 

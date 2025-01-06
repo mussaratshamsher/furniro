@@ -14,7 +14,7 @@ export default async function Hero() {
      const[heroData] = sanityData;
 
   return (
-    <div className='max-w-[1440px]'>
+    <div className='max-w-[1440px] container mx-auto'>
         <div>
 <Image src={urlFor(heroData.image).url()} 
        alt={heroData.title} width={2000} 
