@@ -19,14 +19,6 @@ export default {
         title: 'Button Text'
       },
       {
-        name: 'image',
-        type: 'image',
-        title: 'Image',
-        options: {
-          hotspot: true 
-        }
-      },
-      {
         name: 'image1',
         type: 'image',
         title: 'Image1',

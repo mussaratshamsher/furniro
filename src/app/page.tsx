@@ -16,7 +16,7 @@ export default function Home() {
       <BrowseRange />
 
      {/* Room designs   */}
-     {/* <Designs /> */}
+     <Designs />
 
      {/* Furiniro  Furniture  */}
     <Furniture />

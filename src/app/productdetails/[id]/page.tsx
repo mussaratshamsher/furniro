@@ -3,6 +3,7 @@ import { client } from '@/sanity/lib/client';
 import { urlFor } from '@/sanity/lib/image';  
 import Image from 'next/image';  
 import { notFound } from 'next/navigation';   
+import { FaStar, FaRegStar } from 'react-icons/fa';
 
 interface Product {  
     title: string;  
@@ -11,6 +12,8 @@ interface Product {
     image: string;  
     description: string;  
     price: number;  
+    yellowstars: number;
+    graystars: number;
 }  
  
 const fetchProduct = async (id: string): Promise<Product | null> => {  
@@ -24,12 +27,13 @@ const fetchProduct = async (id: string): Promise<Product | null> => {
 };  
   
 const ProductDetail = async ({ params }: { params: { id: string } }) => {  
-    const product = await fetchProduct(params.id); // Fetching product data based on ID from params  
+    const product = await fetchProduct(params.id);  
 
     if (!product) {  
-        notFound(); // Redirect to 404 if product is not found  
+        notFound();   
     }  
-
+    const yellowStars = Array(product.yellowstars).fill(<FaStar className="text-yellow-500" />);  
+    const grayStars = Array(product.graystars).fill(<FaRegStar className="text-gray-400" />); 
     return (  
         <div className='product-detail max-w-[1440px] container mx-auto'>  
             <h1 className='text-3xl'>{product.title}</h1>  
@@ -37,10 +41,10 @@ const ProductDetail = async ({ params }: { params: { id: string } }) => {
                 src={urlFor(product.image).url()}  
                 alt={product.title}  
                 width={500}  
-                height={500}  
-            />  
+                height={500} />  
             
-            <h2 className='text-xl'>{product.name}</h2>  
+            <h2 className='text-xl'>{product.name}</h2> 
+            {yellowStars} {grayStars} 
             <p>{product.description}</p>  
             <h3 className='text-lg font-bold'>{product.price}</h3>  
         </div>  

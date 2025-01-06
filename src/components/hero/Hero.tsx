@@ -25,7 +25,7 @@ p-4'>
 <h1 className='font-bold font-serif'>{heroData.subtitle1}</h1>
 <h1 className='text-lg md:text-3xl  md:font-extrabold'>{heroData.title}</h1>
 <h1 className='md:mt-5 indent-5 text-justify whitespace-break-spaces'>{heroData.subtitle}</h1>
-<Link href='/shop'> 
+<Link href='/product'> 
 <Button className='bg-[#917214] hover:animate-pulse hover:bg-white text-white hover:text-[#917214] mt-2'>
     {heroData.buttonText}</Button>
 </Link>
