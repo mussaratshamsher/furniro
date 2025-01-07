@@ -32,7 +32,7 @@ export default function Header() {
 </div>
 
 <Sheet >
-  <SheetTrigger className='top-0 w-full md:hidden'><Logs /></SheetTrigger>
+  <SheetTrigger className=' md:hidden'><Logs /></SheetTrigger>
   <SheetContent>
     <ul>
   <li><Link href='/' className='hover:underline'>Home</Link> </li>

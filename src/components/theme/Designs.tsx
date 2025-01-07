@@ -30,24 +30,24 @@ export default async function Designs() {
 
   return (
     <div className='max-w-[1440px] container mx-auto'>
-<div className='bg-[#f4dec6] h-[850px] md:h-[1100px] lg:h-[620px] grid grid-cols-3 md:grid-cols-2 
-lg:grid-cols-3 p-2 lg:p-5 mb-2 md:mb-5 lg:mb-10'>
+<div className='bg-[#f4dec6] h-auto grid md:grid-cols-3 
+ px-5 py-10'>
 
-<div className='grid1 p-2 lg:p-5 xl:p-2 mt-2 md:mt-32 lg:mt-0'>
-<h1 className='font-semibold lg:font-extrabold font-xl md:text-2xl lg:text-5xl lg:mt-10 text-center'>{designsData.title}</h1>
-<h2 className='mt-2 lg:mt-14 text-center'>{designsData.subtitle} </h2>
-<Link href='/products'><Button className='bg-[#b88f14] hover:animate-pulse mt-2 lg:mt-10'>{designsData.button}</Button> </Link>
+<div className='grid1 md:col-span-2 mt-2 md:mt-32 lg:mt-0 px-10 lg:pt-20'>
+<h1 className='font-semibold lg:font-extrabold font-xl md:text-2xl lg:text-5xl lg:mt-10 text-center md:text-start'>{designsData.title}</h1>
+<h2 className='mt-2 lg:mt-14 text-center  md:text-start'>{designsData.subtitle} </h2>
+<Link href='/products'><Button className='bg-[#b88f14] hover:animate-pulse mt-2 lg:mt-10 ml-10 md:ml-0'>{designsData.button}</Button> </Link>
 </div>
 
-<div className='grid-2 slider p-2 lg:p-5 xl:p-2 col-span-2 md:col-span-1 md:ml-20 lg:ml-0'>
+<div className='grid2 slider  md:ml-20 lg:ml-0 pr-5'>
 
 <Slider {...settings}>
       <div>
         <Image src={urlFor(designsData.image1).url()} 
                alt={designsData.title} width={2000} 
-               height={2000}/> 
+               height={2000} className='w-60 md:w-72 lg:w-96'/> 
       </div>
-      <div>
+      {/* <div>
       <Image src={urlFor(designsData.image2).url()} 
                alt={designsData.title} width={2000} 
                height={2000}/> 
@@ -61,7 +61,7 @@ lg:grid-cols-3 p-2 lg:p-5 mb-2 md:mb-5 lg:mb-10'>
       <Image src={urlFor(designsData.image4).url()} 
                alt={designsData.title} width={2000} 
                height={2000} /> 
-      </div>
+      </div> */}
         
     </Slider>
 
