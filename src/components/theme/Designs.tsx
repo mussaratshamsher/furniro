@@ -30,7 +30,7 @@ export default async function Designs() {
 
   return (
     <div className='max-w-[1440px] container mx-auto'>
-<div className='bg-[#f4dec6] h-auto grid md:grid-cols-3 
+<div className='bg-[#f4dec6] h-auto grid grid-cols-1 md:grid-cols-3 
  px-5 py-10'>
 
 <div className='grid1 md:col-span-2 mt-2 md:mt-32 lg:mt-0 px-10 lg:pt-20'>
@@ -47,21 +47,21 @@ export default async function Designs() {
                alt={designsData.title} width={2000} 
                height={2000} className='w-60 md:w-72 lg:w-96'/> 
       </div>
-      {/* <div>
+      <div>
       <Image src={urlFor(designsData.image2).url()} 
                alt={designsData.title} width={2000} 
-               height={2000}/> 
+               height={2000}  className='w-60 md:w-72 lg:w-96'/> 
       </div>
       <div>
       <Image src={urlFor(designsData.image3).url()} 
                alt={designsData.title} width={2000} 
-               height={2000} /> 
+               height={2000}  className='w-60 md:w-72 lg:w-96' /> 
       </div>
       <div>
       <Image src={urlFor(designsData.image4).url()} 
                alt={designsData.title} width={2000} 
-               height={2000} /> 
-      </div> */}
+               height={2000}  className='w-60 md:w-72 lg:w-96'/> 
+      </div>
         
     </Slider>
 
