@@ -27,17 +27,7 @@ const products = {
       name: 'price',  
       title: 'Product Price',  
       type: 'number',   
-    },  
-    {  
-      name: 'yellowStars',  
-      title: 'Yellow Stars',  
-      type: 'number',    
-    },  
-    {  
-      name: 'grayStars',  
-      title: 'Gray Stars',  
-      type: 'number',    
-    },  
+    },    
     {  
       name: 'description',  
       title: 'Product Description',  

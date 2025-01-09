@@ -1,7 +1,4 @@
 
-
-"use client"
-
 import { Button } from '@/components/ui/button';
 import { client } from '@/sanity/lib/client';  
 import { urlFor } from '@/sanity/lib/image';  
@@ -9,7 +6,6 @@ import { Facebook, Instagram, Twitter } from 'lucide-react';
 import Image from 'next/image';  
 import Link from 'next/link';
 import { notFound } from 'next/navigation';   
-import { useState } from 'react';
 import { FaStar, FaRegStar, FaHeart } from 'react-icons/fa';
 import { FaCartShopping } from 'react-icons/fa6';
 
@@ -41,16 +37,14 @@ const ProductDetail = async ({ params }: { params: { id: string } }) => {
     const product = await fetchProduct(params.id);  
 
     if (!product) {  
-        notFound();  }  
-    const yellowStars = Array(product.yellowstars).fill(<FaStar className="text-yellow-500" />);  
-    const grayStars = Array(product.graystars).fill(<FaRegStar className="text-gray-400" />); 
+        notFound();  } 
  
     return (  
         <div className="text-gray-600 body-font overflow-hidden">
         <div className="max-w-[1440px] mb-2 md:mb-5 container mx-auto">
          <div className="lg:w-4/5 mx-auto p-1 md:p-0 grid xl:grid-cols-2">
            {/* products gallery  */}
-           <div className='grid grid-cols-4 gap-1 md:gap-3 lg:gap-5'>
+     <div className='grid grid-cols-4 gap-1 md:gap-3 lg:gap-5'>
             <div className='col-span-1 xl:gap-2'>
           <div className='sm:h-32 md:h-44 xl:h-36 '> <Image src={urlFor(product.image).url()} alt={product.title} 
           width={500} height={500} className='rounded-md md:p-5 lg:p-1 xl:p-0'/> </div>
@@ -65,13 +59,15 @@ const ProductDetail = async ({ params }: { params: { id: string } }) => {
            </div>
            </div>
            {/* details  */}
-            <div className="w-full lg:pl-10 lg:py-6 mt-6 lg:mt-0">
+      <div className="w-full lg:pl-10 lg:py-6 mt-6 lg:mt-0">
    <h1 className="text-gray-900 text-3xl title-font font-bold mb-1"> {product.title}</h1>
    <h2 className="text-base title-font text-gray-500 tracking-widest"> {product.name} </h2>
    <h2 className="text-base title-font tracking-widest"> {product.tags} </h2>
               
               <div className="flex py-2  ">
-       {yellowStars} {yellowStars} {yellowStars} {yellowStars} {grayStars}  
+      <div className='flex'>
+      <FaStar className='text-yellow-400' /><FaStar className='text-yellow-400' /><FaStar className='text-yellow-400' />
+      <FaStar className='text-yellow-400' /> <FaRegStar className='text-gray-400'/></div> 
             <span className="text-gray-600 ml-3">{product.reviews} Reviews</span>
             
             <div className='flex'> <Facebook className='hover:text-[#b88f14]'/>
@@ -128,7 +124,7 @@ const ProductDetail = async ({ params }: { params: { id: string } }) => {
             </div>
           </div>
           {/* section 2  */}
-          <div className='py-2 md:py-5 lg:w-4/5 mx-auto p-2 md:p-0'>
+      <div className='py-2 md:py-5 lg:w-4/5 mx-auto p-2 md:p-0'>
           {/* image grid  */}
           <h1 className="text-gray-900 text-3xl title-font font-bold mb-1"> {product.category}</h1>
           <div className='grid grid-cols-2 gap-2 md:gap-5 lg:gap-10'>
@@ -138,7 +134,7 @@ const ProductDetail = async ({ params }: { params: { id: string } }) => {
           alt={product.title} width={500} height={500}  className='max-h-80'/> 
               </div>
                {/* details */}
-           <div className='text-black mt-3 '>
+      <div className='text-black mt-3 '>
                 <span className='underline text-lg md:text-2xl font-bold '> Details about Product</span> <br />
                <div className='flex justify-between text-center indent-20 mx-auto'> {product.details}</div>
             </div>
