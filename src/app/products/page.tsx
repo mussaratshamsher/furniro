@@ -2,10 +2,11 @@ import { Button } from '@/components/ui/button';
 import { client } from '@/sanity/lib/client';  
 import { urlFor } from '@/sanity/lib/image';  
 import { ChevronRight } from 'lucide-react';
-import { FaCartShopping } from "react-icons/fa6";
+import { FaCartShopping, FaHeartCircleXmark } from "react-icons/fa6";
 import Image from 'next/image';  
 import Link from 'next/link';  
 import React from 'react';  
+import { FaHeart } from 'react-icons/fa';
 
 export default async function Products() { 
 
@@ -45,11 +46,14 @@ export default async function Products() {
             <Image src={urlFor(product.image).url()}  
              alt={product.title} width={500} height={500}  
            className='rounded gorup-hover:scale-125 duration-500' />  
-             <h1 className='text-xs font-semibold lg:text-2xl lg:font-bold'>{product.title}</h1>  
-            <h2 className='text-xs lg:text-lg'>{product.name}</h2>  
+             <h1 className='text-xs font-semibold lg:text-lg lg:font-bold'>{product.title}</h1>  
+            <h2 className='text-xs lg:text-sm'>{product.name}</h2>  
              <p className='font-medium text-sm lg:font-bold'>Rs.{product.price}</p>  
-             </Link>  
-             <Button> <FaCartShopping className='hover:bg-black/70 hover:animate-pulse'/> Add to Cart</Button>
+             </Link> 
+             <div className='flex justify-evenly mb-1 md:mb-2 '> 
+             <Button> <FaCartShopping className='hover:bg-black/60 hover:animate-pulse'/> Add to Cart</Button>
+             <Button><FaHeart className='hover:bg-black/60 hover:animate-pulse'/> Shop Now</Button> 
+               </div>
                
            </div>  
           ))}  
