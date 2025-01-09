@@ -1,7 +1,7 @@
 import { Button } from '@/components/ui/button';
 import { client } from '@/sanity/lib/client';  
 import { urlFor } from '@/sanity/lib/image';  
-import {  ChevronRight } from 'lucide-react';
+import { ChevronRight } from 'lucide-react';
 import { FaCartShopping } from "react-icons/fa6";
 import Image from 'next/image';  
 import Link from 'next/link';  
@@ -36,7 +36,7 @@ export default async function Products() {
             </div>  
 
             {/* Products List */}  
-            <div className='grid grid-cols-4 mx-2 lg:mx-10 py-5 gap-3 lg:gap-5'>  
+            <div className='grid grid-cols-2 md:grid-cols-4 mx-1 gap-2 md:mx-2 lg:mx-10 py-5 md:gap-3 lg:gap-5'>  
             {sanityData.map((product) => (  
             <div key={product.id} className='grid border-none rounded shadow-[#f4dec6] shadow-md
              hover:bg-slate-50 text-center lg:mb-0 z-10 group'>  
