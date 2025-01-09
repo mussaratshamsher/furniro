@@ -1,4 +1,6 @@
-export default {
+import { deflate } from "zlib"
+
+const designs = {
     name: 'designs',
     type: 'document',
     title: 'Designs',
@@ -53,3 +55,4 @@ export default {
     ]
   }
   
+  export default designs

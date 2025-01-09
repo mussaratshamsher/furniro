@@ -1,7 +1,7 @@
 
 import Hero from '@/components/hero/Hero'
 import BrowseRange from '@/components/theme/BrowseRange'
-import Designs from '@/components/theme/Designs'
+import DesignsServer from '@/components/theme/DesignsServer'
 import Furniture from '@/components/theme/Furniture'
 
 import React from 'react'
@@ -16,7 +16,7 @@ export default function Home() {
       <BrowseRange />
 
      {/* Room designs   */}
-     <Designs />
+    <DesignsServer />
 
      {/* Furiniro  Furniture  */}
     <Furniture />

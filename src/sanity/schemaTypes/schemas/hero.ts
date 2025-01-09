@@ -1,4 +1,4 @@
-export default {
+const hero = {
     name: 'heroPage',
     title: 'Hero Page',
     type: 'document',
@@ -33,3 +33,5 @@ export default {
       },
     ],
   };
+
+  export default hero

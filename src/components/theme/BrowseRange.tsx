@@ -37,7 +37,7 @@ export default function BrowseRange() {
             }
           },
           {
-            breakpoint: 600,
+            breakpoint: 770,
             settings: {
               slidesToShow: 2,
               slidesToScroll: 2,
@@ -73,7 +73,7 @@ export default function BrowseRange() {
       <h2 className='text-[#b88f14] text-center md:text-lg lg:text-xl mt-5'>
       Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae quos dolore doloribus. </h2>
 
-<div className='p-5 md:p-0 lg:px-4 lg:py-10 md:mt-48 lg:mt-0 lg:ml-10 xl:ml-1'>
+<div className='p-5 md:p-0 lg:pl-4 lg:py-10 md:mt-48 lg:mt-0 lg:ml-10 xl:ml-1'>
 
 
 <Slider {...settings}>

@@ -1,4 +1,4 @@
-export default {  
+const products = {  
   name: 'product',  
   title: 'Product',  
   type: 'document',  
@@ -64,3 +64,5 @@ export default {
       type: 'text',           
     }
   ]}
+
+  export default products
