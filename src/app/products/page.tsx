@@ -25,8 +25,9 @@ export default async function Products() {
 
     const sanityData:Product[] = await client.fetch(query);  
 
-    return (  
-        <div>  
+    return ( 
+         
+        <div className='container mx-auto max-w-[1440px]'>  
             {/* Header */}  
             <div className='bg-[#f4dec6] w-full h-24 text-center py-7'>  
                 <h1 className='text-xl lg:text-3xl'>Furniro</h1>  
@@ -37,7 +38,7 @@ export default async function Products() {
             </div>  
 
             {/* Products List */}  
-            <div className='grid grid-cols-2 md:grid-cols-4 mx-1 gap-2 md:mx-2 lg:mx-10 py-5 md:gap-3 lg:gap-5'>  
+            <div className='grid grid-cols-2 md:grid-cols-3 xl:grid-cols-4 mx-1 gap-2 md:mx-2 lg:mx-10 py-5 md:gap-3 lg:gap-5'>  
             {sanityData.map((product) => (  
             <div key={product.id} className='grid border-none rounded shadow-[#f4dec6] shadow-md
              hover:bg-slate-50 text-center lg:mb-0 z-10 group'>  
@@ -50,9 +51,13 @@ export default async function Products() {
             <h2 className='text-xs lg:text-sm'>{product.name}</h2>  
              <p className='font-medium text-sm lg:font-bold'>Rs.{product.price}</p>  
              </Link> 
-             <div className='flex justify-evenly mb-1 md:mb-2 '> 
-             <Button> <FaCartShopping className='hover:bg-black/60 hover:animate-pulse'/> Add to Cart</Button>
-             <Button><FaHeart className='hover:bg-black/60 hover:animate-pulse'/> Shop Now</Button> 
+             <div className='grid gap-1 md:flex md:justify-evenly mb-1 md:mb-2 '> 
+        <Link href='/cart'>
+             <Button><FaCartShopping className='hover:bg-black/60 hover:animate-pulse'/> Add to Cart
+             </Button></Link>
+            
+             <Button>
+            <FaHeart className='hover:bg-black/60 hover:animate-pulse'/> Shop Now</Button> 
                </div>
                
            </div>  

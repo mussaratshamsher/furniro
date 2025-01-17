@@ -5,53 +5,53 @@ const products = {
   fields: [ 
     {
       name: 'image',
-  title: 'Image',
-  type: 'image',
+      title: 'Image',
+       type: 'image',
     } ,
     {  
-      name: 'name',  
-      title: 'Product Name',  
-      type: 'string',    
+        name: 'name',  
+       title: 'Product Name',  
+        type: 'string',    
     },  
     {  
-      name: 'title',  
+       name: 'title',  
       title: 'Product Title',  
-      type: 'string',  
+       type: 'string',  
     },  
     {  
-      name: 'id',  
+       name: 'id',  
       title: 'Product ID',  
-      type: 'string',    
+       type: 'string',    
     },   
     {  
-      name: 'price',  
+       name: 'price',  
       title: 'Product Price',  
-      type: 'number',   
+       type: 'number',   
     },    
     {  
-      name: 'description',  
+       name: 'description',  
       title: 'Product Description',  
-      type: 'string',  
+       type: 'string',  
     },  
     {  
-      name: 'tags',  
+       name: 'tags',  
       title: 'Product Tags',  
-      type: 'string',   
+       type: 'string',   
     },  
     {  
-      name: 'category',  
+       name: 'category',  
       title: 'Product Category',  
-      type: 'string',  
+       type: 'string',  
     },  
     {  
-      name: 'reviews',  
+       name: 'reviews',  
       title: 'Reviews',  
-      type: 'number',           
+       type: 'number',           
     },
     {  
-      name: 'details',  
+       name: 'details',  
       title: 'Product Details',  
-      type: 'text',           
+       type: 'text',           
     }
   ]}
 

@@ -64,7 +64,7 @@ const ProductDetail = async ({ params }: { params: { id: string } }) => {
    <h2 className="text-base title-font text-gray-500 tracking-widest"> {product.name} </h2>
    <h2 className="text-base title-font tracking-widest"> {product.tags} </h2>
               
-              <div className="flex py-2  ">
+     <div className="flex py-2 ">
       <div className='flex'>
       <FaStar className='text-yellow-400' /><FaStar className='text-yellow-400' /><FaStar className='text-yellow-400' />
       <FaStar className='text-yellow-400' /> <FaRegStar className='text-gray-400'/></div> 
