@@ -1,4 +1,5 @@
 import Furniture from '@/components/theme/Furniture'
+import Services from '@/components/theme/Services'
 import Image from 'next/image'
 import React from 'react'
 
@@ -12,7 +13,9 @@ export default function about() {
 
 <div className='grid md:grid-cols-2 max-w-screen-lg md:gap-5 lg:gap-10 mx-auto'>
  
-<Image src={''} alt='' width={500} height={500}/>  
+<video src="/videos/furniture.mp4" controls className='h-72 m-5 my-10'>
+Your browser does not support video
+</video>  
 
 <p className='flex justify-center hyphens-none whitespace-break-spaces p-5 mx-auto'>
 Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa libero soluta obcaecati quaerat nesciunt pariatur provident totam vitae quod maxime non, natus doloremque veritatis, cupiditate odit sit velit quidem consequuntur
@@ -25,10 +28,13 @@ Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque excepturi iusto, 
   <h1 className='text-2xl md:text-3xl font-bold text-center'>About Our Services
     <hr className='border-[#bc9729] border-2 w-60 mx-auto'/></h1>
 
-  <h2>component</h2>
+  <Services/>
 
   <h1 className='text-2xl md:text-3xl font-bold text-center'>Some of our Products & Style Decor
   <hr className='border-[#bc9729] border-2 w-60 mx-auto'/></h1>
+  
+
+
 
   <Furniture/>
     </div>
